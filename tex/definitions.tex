@@ -31,46 +31,52 @@
 \newcommand{\qs}{\mathrm{q}}													
 
 % Mechanical params - inertias
-\newcommand{\Ix}{\mathbf{I}}													% the inertia as I
-\newcommand{\Jx}{\mathbf{J}}													% the inertia as J
-\newcommand{\Iw}[1]{\ensuremath{\Ix_{#1}}}						% the inertia as I_w
-\newcommand{\Jw}[1]{\ensuremath{\Jx_{#1}}}						% the inertia as J_w
-\newcommand{\gammax}{\mathbb{\Gamma}}									% the inertia combined
+\newcommand{\Ix}{\mathbf{I}}
+\newcommand{\Jx}{\mathbf{J}}
+\newcommand{\Iw}[1]{\ensuremath{\Ix_{#1}}}
+\newcommand{\Jw}[1]{\ensuremath{\Jx_{#1}}}
+\newcommand{\gammax}{\mathbb{\Gamma}}
 
-% Transformations
-\newcommand{\A}{\mathbf{A}}														% the 3xn RW spin-axis allocation matrix
-\newcommand{\ai}{\mathbf{a}_i}												% the 3x1 RW spin-axis allocation vector
-\newcommand{\aw}[1]{\ensuremath{\mathbf{a}_{#1}}}			% the 3x1 RW_i spin-axis allocation vector wheeel w
+% Transformations - the RW spin-axis allocation matrix and its elements
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\ai}{\mathbf{a}_i}
+\newcommand{\aw}[1]{\ensuremath{\mathbf{a}_{#1}}}
  
-
-% Inputs
-\newcommand{\taux}{\boldsymbol{\tau}}									% the torque input S/C
-\newcommand{\tauw}[1]{\ensuremath{\taux_{#1}}}				% the torque input RW
+% Inputs - the S/C torque input and the RW torque input
+\newcommand{\taux}{\boldsymbol{\tau}}
+\newcommand{\tauw}[1]{\ensuremath{\taux_{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STATE SPACE MATH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\x}{\mathbf{x}}  								% the state vector in R^n
-\newcommand{\xs}{x} 												% the state vector in R
+% State vector - in R^n and in R
+\newcommand{\x}{\mathbf{x}}  								
+\newcommand{\xs}{x}
 
-\newcommand{\f}{\mathbf{f}}  								% the nonlinear f
-\newcommand{\F}{\mathbf{F}}  								% the nonlinear f
-\newcommand{\g}{\mathbf{g}}  								% the nonlinear f
-\newcommand{\G}{\mathbf{G}}  								% the nonlinear G
+% State vector coordinate change - in R^n and in R
+\newcommand{\z}{\mathbf{z}}  								
+\newcommand{\zs}{z}
 
+% Dynamics - continuous time, nonlinear, etc.
+\newcommand{\f}{\mathbf{f}}
+\newcommand{\F}{\mathbf{F}}
+\newcommand{\g}{\mathbf{g}}
+\newcommand{\G}{\mathbf{G}}
 
-\newcommand{\U}{\mathbf{u}}  								% the input in R^n
-\newcommand{\us}{u} 												% the input in R
+% Input vector - in R^n and in R
+\newcommand{\U}{\mathbf{u}}
+\newcommand{\us}{u}
 
-\newcommand{\y}{\mathbf{y}}  								% the output vector in R^n
-\newcommand{\ys}{y} 												% the output vector in R
+% Output vector - in R^n and in R
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\ys}{y}
 
 % old stuff
 
-\newcommand{\Fx}{\mathbf{F}} 								% 
-\newcommand{\Gx}{\mathbf{G}} 								% 
-\newcommand{\Tx}{\mathbf{T}} 								% 
+\newcommand{\Fx}{\mathbf{F}}
+\newcommand{\Gx}{\mathbf{G}}
+\newcommand{\Tx}{\mathbf{T}}
 
 
 \newcommand{\dx}{\mathbf{d}}								% the d
