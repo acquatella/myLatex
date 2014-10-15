@@ -83,36 +83,34 @@
 \newcommand{\Tx}{\mathbf{T}}
 
 
-\newcommand{\dx}{\mathbf{d}}								% the d
+\newcommand{\dx}{\mathbf{d}}
 
-\newcommand{\px}{\mathbf{p}} 								% the parameter vector
-\newcommand{\Qx}{\mathbf{Q}} 								% the quaternion
+\newcommand{\px}{\mathbf{p}}
+\newcommand{\Qx}{\mathbf{Q}}
 
-\newcommand{\nux}{\boldsymbol{\nu}}  				% the virtual control
+\newcommand{\nux}{\boldsymbol{\nu}}
 
-\newcommand{\N}{\boldsymbol{N}} 						% the kin matrx
-\newcommand{\K}{\mathbf{K}}  								% the K
+\newcommand{\N}{\boldsymbol{N}}
+\newcommand{\K}{\mathbf{K}}
 
-\newcommand{\xx}{\mathit{x}}  									% x
-\newcommand{\yy}{\mathit{y}}  									% y
-\newcommand{\zz}{\mathit{z}}  									% z
+\newcommand{\xx}{\mathit{x}}
+\newcommand{\yy}{\mathit{y}}
+\newcommand{\zz}{\mathit{z}}
 
-\newcommand{\pp}{\mathit{p}}  									% p
-\newcommand{\qq}{\mathit{q}}  									% q
-\newcommand{\rr}{\mathit{r}}  									% r
+\newcommand{\pp}{\mathit{p}}
+\newcommand{\qq}{\mathit{q}}
+\newcommand{\rr}{\mathit{r}}
 
-\newcommand{\deltax}{\boldsymbol{\delta}} 	  % the increment vector
-\newcommand{\B}{\mathbf{B}} 							% the input matrix   
-\newcommand{\Ds}{\mathbf{D}} 							% the feedforward
+\newcommand{\deltax}{\boldsymbol{\delta}}
+\newcommand{\B}{\mathbf{B}}
+\newcommand{\Ds}{\mathbf{D}}
 
+\newcommand{\rx}{\mathit{R}}
+\newcommand{\vx}{\mathit{v}}
 
-
-\newcommand{\rx}{\mathit{R}}  						% the... 
-\newcommand{\vx}{\mathit{v}}  						% the...
-
-\newcommand{\vxx}{\vx_{\xx}}  
-\newcommand{\vyy}{\vx_{\yy}}  
-\newcommand{\vzz}{\vx_{\zz}}  
+\newcommand{\vxx}{\vx_{\xx}}
+\newcommand{\vyy}{\vx_{\yy}}
+\newcommand{\vzz}{\vx_{\zz}}
 
 \newcommand{\omegae}{\omegax_E} 
 
@@ -120,18 +118,25 @@
 % OTHER Accepted aditions 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Math symbols
+% Math symbols - differential
 \newcommand{\dif}{\mathrm{d}}
-\newcommand{\transpose}{\ensuremath{^{\intercal}}} % choose btw \top or \intercal
-\newcommand{\inv}{\ensuremath{^{-1}}} % inverse
+
+% Math symbols - transpose (choose btw \top or \intercal)
+\newcommand{\transpose}{\ensuremath{^{\intercal}}} 
+
+% Math symbols - inverse
+\newcommand{\inv}{\ensuremath{^{-1}}} 
+
+% Math symbols - Identity matrix (bugs when no argument is given)
 \newcommand{\Iden}[1]{\ensuremath{\mathrm{I}_{#1}}}
+
+% Math symbols - Null matrix (bugs when no argument is given)
 \newcommand{\Zeros}[1]{\ensuremath{0_{#1}}}
 
+% old stuff
 
 % MATLAB in small caps
 \newcommand{\matlab}{\textsc{Matlab}}
-
-% old stuff
 
 % Others
 \newcommand{\vect}[1]{\ensuremath{\boldsymbol{#1}}}
@@ -158,7 +163,13 @@
 \newcommand{\realsf}{\mathbf{R}^4}
 \newcommand{\realsplus}{\mathbf{R}^{+}}
 \newcommand{\Lie}[1]{\ensuremath{L_{#1}}}
-\newcommand{\expo}{\mathrm{e}}							% the exp function
-\newcommand{\Br}{\mathcal{B}}								% the B(r) domain, a ball of size r around the origin.
-\newcommand{\Dd}{\mathcal{D}}								% the D    domain, an open region containing the origin
-\newcommand{\Sk}[1]{\ensuremath{\left[{#1}\times\right]}}		% the skew symmetric matrix (this one or Sx)
+\newcommand{\expo}{\mathrm{e}}							
+
+% the B(r) domain, a ball of size r around the origin.
+\newcommand{\Br}{\mathcal{B}}
+
+% the D domain, an open region containing the origin								
+\newcommand{\Dd}{\mathcal{D}}
+
+% the skew symmetric matrix (this one or Sx)								
+\newcommand{\Sk}[1]{\ensuremath{\left[{#1}\times\right]}}		
