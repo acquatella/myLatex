@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SPACE MATH 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dynamics S/C
+\newcommand{\Hx}{\mathbf{H}} 											% the angular momentum of S/C
+\newcommand{\Hxdot}{\dot{\Hx}}										% the angular momentum derivative of S/C
+
+\newcommand{\omegax}{\mathbf{\omega}} 	  				% the angular velocity of S/C
+\newcommand{\omegaxdot}{\dot{\omegax}} 	  				% the angular velocity derivative of S/C
+
+% Dynamics RW
+\newcommand{\hx}{\mathbf{h}} 											% the angular momentum of RW
+\newcommand{\hxdot}{\dot{\hx}}										% the angular momentum derivative of RW
+
+\newcommand{\hw}[1]{\ensuremath{\hx_{#1}}}				% the angular momentum of RW_i
+\newcommand{\hwdot}[1]{\ensuremath{\hxdot_{#1}}}	% the angular momentum derivative of RW_i
+
+\newcommand{\Omegax}{\pmb{\Omega}} 			  				% the angular velocity of RW (omega_w + A^T omega)
+\newcommand{\Omegaxdot}{\dot{\Omegax}} 			  	  % the angular velocity derivative of RW
+
+\newcommand{\omegaw}[1]{\ensuremath{\Omega_{#1}}} % the angular velocity of RW_i
+\newcommand{\omegawdot}[1]{\ensuremath{\dot{\Omega}_{#1}}} 	% the angular velocity derivative of RW_i
+
+% Dynamics Quaternion
+\newcommand{\q}{\mathbf{q}}  											% the quaternion vector
+\newcommand{\qs}{\mathrm{q}}  										% the quaternion element
+
+% Mechanical params
+\newcommand{\Ix}{\mathbf{I}}											% the inertia as I
+\newcommand{\Jx}{\mathbf{J}} 											% the inertia as J
+\newcommand{\Iw}[1]{\ensuremath{\Ix_{#1}}}				% the inertia as I_w
+\newcommand{\Jw}[1]{\ensuremath{\Jx_{#1}}}				% the inertia as J_w
+\newcommand{\gammax}{\mathbb{\Gamma}} 	  	  		% the inertia combined
+
+% Transformations
+\newcommand{\A}{\mathbf{A}} 											% the 3xn RW spin-axis allocation matrix
+\newcommand{\ai}{\mathbf{a}_i} 										% the 3x1 RW spin-axis allocation vector
+\newcommand{\aw}[1]{\ensuremath{\mathbf{a}_{#1}}}	% the 3x1 RW_i spin-axis allocation vector wheeel w
+ 
+
+% Inputs
+\newcommand{\taux}{\boldsymbol{\tau}} 	  			% the torque input S/C
+\newcommand{\tauw}[1]{\ensuremath{\taux_{#1}}} 	% the torque input RW
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% STATE SPACE MATH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\x}{\mathbf{x}}  								% the state vector in R^n
+\newcommand{\xs}{x} 												% the state vector in R
+
+\newcommand{\f}{\mathbf{f}}  								% the nonlinear f
+\newcommand{\F}{\mathbf{F}}  								% the nonlinear f
+\newcommand{\g}{\mathbf{g}}  								% the nonlinear f
+\newcommand{\G}{\mathbf{G}}  								% the nonlinear G
+
+
+\newcommand{\U}{\mathbf{u}}  								% the input in R^n
+\newcommand{\us}{u} 												% the input in R
+
+\newcommand{\y}{\mathbf{y}}  								% the output vector in R^n
+\newcommand{\ys}{y} 												% the output vector in R
+
+% old stuff
+
+\newcommand{\Fx}{\mathbf{F}} 								% 
+\newcommand{\Gx}{\mathbf{G}} 								% 
+\newcommand{\Tx}{\mathbf{T}} 								% 
+
+
+\newcommand{\dx}{\mathbf{d}}								% the d
+\newcommand{\M}{\mathbf{M}}									% the moment
+\newcommand{\px}{\mathbf{p}} 								% the parameter vector
+\newcommand{\Qx}{\mathbf{Q}} 								% the quaternion
+
+\newcommand{\nux}{\boldsymbol{\nu}}  				% the virtual control
+
+\newcommand{\N}{\boldsymbol{N}} 						% the kin matrx
+\newcommand{\K}{\mathbf{K}}  								% the K
+
+\newcommand{\xx}{\mathit{x}}  									% x
+\newcommand{\yy}{\mathit{y}}  									% y
+\newcommand{\zz}{\mathit{z}}  									% z
+
+\newcommand{\pp}{\mathit{p}}  									% p
+\newcommand{\qq}{\mathit{q}}  									% q
+\newcommand{\rr}{\mathit{r}}  									% r
+
+\newcommand{\deltax}{\boldsymbol{\delta}} 	  % the increment vector
+\newcommand{\B}{\mathbf{B}} 							% the input matrix   
+\newcommand{\Ds}{\mathbf{D}} 							% the feedforward
+
+
+
+\newcommand{\rx}{\mathit{R}}  						% the... 
+\newcommand{\vx}{\mathit{v}}  						% the...
+
+\newcommand{\vxx}{\vx_{\xx}}  
+\newcommand{\vyy}{\vx_{\yy}}  
+\newcommand{\vzz}{\vx_{\zz}}  
+
+\newcommand{\omegae}{\omegax_E} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OTHER Accepted aditions 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Math symbols
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\transpose}{\ensuremath{^{\intercal}}} % choose btw \top or \intercal
+\newcommand{\inv}{\ensuremath{^{-1}}} % inverse
+\newcommand{\Iden}[1]{\ensuremath{\mathrm{I}_{#1}}}
+\newcommand{\Zeros}[1]{\ensuremath{0_{#1}}}
+
+
+% MATLAB in small caps
+\newcommand{\matlab}{\textsc{Matlab}}
+
+% old stuff
+
+% Others
+\newcommand{\vect}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\tth}{\ensuremath{^{\text{th}}}}
+\newcommand{\nth}{^{(n)}}
+\newcommand{\ie}{\textsl{i.e.}}
+\newcommand{\ies}{\text{i.e.~}}
+\newcommand{\Idenold}{\mathrm{I}_{3\times3}}
+\newcommand{\IDEN}{\mathrm{I}_{6\times6}}
+\newcommand{\Zerosold}{0_{3\times3}}
+\newcommand{\rad}{\ensuremath{\text{rad}}}
+
+% Math symbols temp
+\newcommand{\me}{\mathrm{e}}
+\newcommand{\mi}{\mathrm{i}}
+
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\quarter}{\frac{1}{4}}
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\realsn}{\mathbf{R}^n}
+\newcommand{\realsm}{\mathbf{R}^m}
+\newcommand{\realsp}{\mathbf{R}^p}
+\newcommand{\realst}{\mathbf{R}^3}
+\newcommand{\realsf}{\mathbf{R}^4}
+\newcommand{\realsplus}{\mathbf{R}^{+}}
+\newcommand{\Lie}[1]{\ensuremath{L_{#1}}}
+\newcommand{\expo}{\mathrm{e}}							% the exp function
+\newcommand{\Br}{\mathcal{B}}								% the B(r) domain, a ball of size r around the origin.
+\newcommand{\Dd}{\mathcal{D}}								% the D    domain, an open region containing the origin
+\newcommand{\Sk}[1]{\ensuremath{\left[{#1}\times\right]}}		% the skew symmetric matrix (this one or Sx)
