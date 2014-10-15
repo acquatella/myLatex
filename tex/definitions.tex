@@ -2,31 +2,35 @@
 % SPACE MATH 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Dynamics S/C
-\newcommand{\Hx}{\mathbf{H}}													% the angular momentum of S/C
-\newcommand{\Hxdot}{\dot{\Hx}}												% the angular momentum derivative of S/C
+% S/C Dynamics - angular momentum and its derivative
+\newcommand{\Hx}{\mathbf{H}}													
+\newcommand{\Hxdot}{\dot{\Hx}}												
 
-\newcommand{\omegax}{\mathbf{\omega}}									% the angular velocity of S/C
-\newcommand{\omegaxdot}{\dot{\omegax}}								% the angular velocity derivative of S/C
+% S/C Dynamics - angular velocity and its derivative
+\newcommand{\omegax}{\mathbf{\omega}}	
+\newcommand{\omegaxdot}{\dot{\omegax}}
 
-% Dynamics RW
-\newcommand{\hx}{\mathbf{h}}													% the angular momentum of RW
-\newcommand{\hxdot}{\dot{\hx}}												% the angular momentum derivative of RW
+% RW Dynamics - angular momentum and its derivative
+\newcommand{\hx}{\mathbf{h}}	
+\newcommand{\hxdot}{\dot{\hx}}												
 
-\newcommand{\hw}[1]{\ensuremath{\hx_{#1}}}						% the angular momentum of RW_i
-\newcommand{\hwdot}[1]{\ensuremath{\hxdot_{#1}}}			% the angular momentum derivative of RW_i
+% RW_i Dynamics - angular momentum and its derivative
+\newcommand{\hw}[1]{\ensuremath{\hx_{#1}}}						
+\newcommand{\hwdot}[1]{\ensuremath{\hxdot_{#1}}}			
 
-\newcommand{\Omegax}{\pmb{\Omega}}										% the angular velocity of RW (omega_w + A^T omega)
-\newcommand{\Omegaxdot}{\dot{\Omegax}}								% the angular velocity derivative of RW
+% RW Dynamics - angular velocity (omega_w + A^T omega) and its derivative
+\newcommand{\Omegax}{\pmb{\Omega}}										
+\newcommand{\Omegaxdot}{\dot{\Omegax}}								
 
-\newcommand{\omegaw}[1]{\ensuremath{\Omega_{#1}}}						% the angular velocity of RW_i
-\newcommand{\omegawdot}[1]{\ensuremath{\dot{\Omega}_{#1}}}	% the angular velocity derivative of RW_i
+% RW_i Dynamics - angular velocity and its derivative
+\newcommand{\omegaw}[1]{\ensuremath{\Omega_{#1}}}
+\newcommand{\omegawdot}[1]{\ensuremath{\dot{\Omega}_{#1}}}
 
-% Dynamics Quaternion
-\newcommand{\q}{\mathbf{q}}														% the quaternion vector
-\newcommand{\qs}{\mathrm{q}}													% the quaternion element
+% Attitude Dynamics - quaternion vector and quaternion element
+\newcommand{\q}{\mathbf{q}}														
+\newcommand{\qs}{\mathrm{q}}													
 
-% Mechanical params
+% Mechanical params - inertias
 \newcommand{\Ix}{\mathbf{I}}													% the inertia as I
 \newcommand{\Jx}{\mathbf{J}}													% the inertia as J
 \newcommand{\Iw}[1]{\ensuremath{\Ix_{#1}}}						% the inertia as I_w
