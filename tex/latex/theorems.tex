@@ -1,0 +1,104 @@
+%
+
+% Theorems, Definitions, Proofs
+
+% mydef
+\newtheoremstyle{def}% name
+  {5pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}% 				Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{def} \newtheorem{mydef}{Definition}[chapter]
+
+% myassumption
+\newtheoremstyle{assumption}% name
+  {3pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%Thm head font
+  {-}%        Punctuation after thm head
+  {.5em}% 		Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{assumption} \newtheorem{myassumption}{Assumption}[chapter]
+
+% mytheorem
+\newtheoremstyle{thm}% name
+  {5pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{thm} \newtheorem{mythm}{Theorem}[chapter]
+
+% mylemma
+\newtheoremstyle{lemma}% name
+  {5pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}% 		Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{lemma} \newtheorem{mylemma}{Lemma}[chapter]
+
+% extras
+\newtheorem{myproc}{Procedure}[section]
+\newtheorem{mystatement}{Statement}[section]
+
+% myexample
+\newtheoremstyle{example}% name
+  {1pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries} %Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{example}\newtheorem{myexample}{Example}[chapter]
+%\declaretheorem[name=Example, shaded={bgcolor=white,textwidth=25em},style=example]{myexample}
+
+% myproof
+\newtheoremstyle{proof}% name
+  {5pt}%      Space above
+  {3pt}%      Space below
+  {}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries} %Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{proof}\newtheorem{myproof}{\textit{Proof}}
+
+% myproposition
+\newtheoremstyle{prop}% name
+  {5pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%Thm head font
+  {.}%        Punctuation after thm head
+  {\newline}% Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{prop} \newtheorem{myprop}{Proposition}[chapter]
+
+% myremark
+\newtheoremstyle{remark}% name
+  {5pt}%      Space above
+  {3pt}%      Space below
+  {\itshape}% Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries} %Thm head font
+  {:}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space; \newline = linebreak
+  {\thmname{#1}}%         Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{remark}\newtheorem{myremark}{\textit{Remark}}
