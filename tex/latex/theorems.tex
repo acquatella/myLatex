@@ -1,6 +1,4 @@
-%
-
-% Theorems, Definitions, Proofs
+% Theorems, Definitions, Proofs, etc.
 
 % mydef
 \newtheoremstyle{def}% name
@@ -10,7 +8,7 @@
   {}%         Indent amount (empty = no indent, \parindent = para indent)
   {\bfseries}%Thm head font
   {.}%        Punctuation after thm head
-  {.5em}% 				Space after thm head: " " = normal interword space; \newline = linebreak
+  {.5em}% 		Space after thm head: " " = normal interword space; \newline = linebreak
   {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%         Thm head spec (can be left empty, meaning `normal')
 \theoremstyle{def} \newtheorem{mydef}{Definition}[chapter]
 
@@ -93,12 +91,12 @@
 
 % myremark
 \newtheoremstyle{remark}% name
-  {5pt}%      Space above
-  {3pt}%      Space below
-  {\itshape}% Body font
-  {}%         Indent amount (empty = no indent, \parindent = para indent)
-  {\bfseries} %Thm head font
-  {:}%        Punctuation after thm head
-  {.5em}%     Space after thm head: " " = normal interword space; \newline = linebreak
+  {5pt}%      						Space above
+  {3pt}%      						Space below
+  {\itshape}% 						Body font
+  {}%         						Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%						Thm head font
+  {:}%        						Punctuation after thm head
+  {.5em}%     						Space after thm head: " " = normal interword space; \newline = linebreak
   {\thmname{#1}}%         Thm head spec (can be left empty, meaning `normal')
 \theoremstyle{remark}\newtheorem{myremark}{\textit{Remark}}
