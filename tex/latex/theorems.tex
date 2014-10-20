@@ -8,7 +8,7 @@
   {}%         						Indent amount (empty = no indent, \parindent = para indent)
   {\bfseries}%						Thm head font
   {.}%        						Punctuation after thm head
-  {.5em}% 								Space after thm head: " " = normal interword space; \newline = linebreak
+  {\newline}% 						Space after thm head: " " = normal interword space; \newline = linebreak
   {\thmname{#1}\thmnumber{ #2}\thmnote{. #3}}%		Thm head spec (can be left empty, meaning `normal')
 \theoremstyle{def} \newtheorem{mydef}{Definition}[chapter]
 
