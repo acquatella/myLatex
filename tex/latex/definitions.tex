@@ -2,6 +2,10 @@
 % SPACE MATH 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% S/C Dynamics - rotation matrix and its derivative
+\newcommand{\Rx}{\mathbf{R}}										
+\newcommand{\Rxdot}{\dot{\Rx}}	
+
 % S/C Dynamics - angular momentum and its derivative
 \newcommand{\Hx}{\mathbf{H}}													
 \newcommand{\Hxdot}{\dot{\Hx}}												
@@ -26,6 +30,22 @@
 \newcommand{\omegaw}[1]{\ensuremath{\Omega_{#1}}}
 \newcommand{\omegawdot}[1]{\ensuremath{\dot{\Omega}_{#1}}}
 
+% RW_i Dynamics - angular velocity measure and estimate
+\newcommand{\omegawt}[1]{\ensuremath{\tilde{\Omega}_{#1}}}
+\newcommand{\omegawh}[1]{\ensuremath{\hat{\Omega}_{#1}}}
+
+% RW Kinematics - angle and its derivative
+\newcommand{\Phix}{\pmb{\Phi}}										
+\newcommand{\Phixdot}{\dot{\Phix}}								
+
+% RW_i Kinematics - angle and its derivative
+\newcommand{\phiw}[1]{\ensuremath{\Phi_{#1}}}
+\newcommand{\phiwdot}[1]{\ensuremath{\dot{\Phi}_{#1}}}
+
+% RW_i Dynamics - angle error and estimate
+\newcommand{\phiwt}[1]{\ensuremath{\tilde{\Phi}_{#1}}}
+\newcommand{\phiwh}[1]{\ensuremath{\hat{\Phi}_{#1}}}
+
 % Attitude Dynamics - quaternion vector and quaternion element
 \newcommand{\q}{\mathbf{q}}														
 \newcommand{\qs}{\mathrm{q}}													
@@ -34,6 +54,8 @@
 \newcommand{\Ix}{\mathbf{I}}
 \newcommand{\Jx}{\mathbf{J}}
 \newcommand{\Iw}[1]{\ensuremath{\Ix_{#1}}}
+\newcommand{\Iwt}[1]{\ensuremath{\tilde{\Ix}_{#1}}}
+\newcommand{\Iwh}[1]{\ensuremath{\hat{\Ix}_{#1}}}
 \newcommand{\Jw}[1]{\ensuremath{\Jx_{#1}}}
 \newcommand{\gammax}{\boldsymbol{\Gamma}}
 
@@ -44,7 +66,22 @@
  
 % Inputs - the S/C torque input and the RW torque input
 \newcommand{\taux}{\boldsymbol{\tau}}
-\newcommand{\tauw}[1]{\ensuremath{\taux_{#1}}}
+\newcommand{\tauw}[1]{\ensuremath{\tau_{#1}}} %should be tauw_{} but gives an error
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ROBOTICS MATH 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Joint variables => same as 'Attitude Dynamics - quaternions'
+%\newcommand{\q}{\mathbf{q}}														
+%\newcommand{\qs}{\mathrm{q}}
+
+% Link side inertia matrix => same as 'Metric matrix'
+%\newcommand{\M}{\mathbf{M}}
+
+% Coriolis/centrifugal matrix with respect to M(q) 
+\newcommand{\C}{\mathbf{C}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STATE SPACE MATH
@@ -78,10 +115,12 @@
 \newcommand{\Thetax}{\boldsymbol{\mathbf{\Theta}}}
 
 % Dynamics - continuous time, nonlinear, etc.
+\newcommand{\e}{\mathbf{e}}
 \newcommand{\f}{\mathbf{f}}
 \newcommand{\F}{\mathbf{F}}
 \newcommand{\g}{\mathbf{g}}
 \newcommand{\G}{\mathbf{G}}
+\newcommand{\Gs}{\mathit{G}}
 \newcommand{\h}{\mathbf{h}}	
 
 % Input vector - in R^n and in R
@@ -167,7 +206,7 @@
 \newcommand{\reals}[1]{\real^{#1}}
 
 % Math symbols - Set of Real circles and spheres
-\newcommand{\spher}{\mathbf{S}}
+\newcommand{\spher}{\mathcal{S}}
 \newcommand{\sphere}[1]{\spher^{#1}}
 
 % Math symbols - Set of the special orthogonal group
