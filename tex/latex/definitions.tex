@@ -72,9 +72,14 @@
 % ROBOTICS MATH 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Joint variables => same as 'Attitude Dynamics - quaternions'
-\newcommand{\qr}{\mathbf{q}}														
-\newcommand{\qsr}{\mathrm{q}}
+% Joint coordinates 
+\newcommand{\qr}{\boldsymbol{q}}		
+
+% Cartesian coordinates 
+\newcommand{\xr}{\boldsymbol{x}}	
+
+% Relationship btw joint and cartesian space
+\newcommand{\fr}{\boldsymbol{f}}											
 
 % Link sided inertia matrix 
 \newcommand{\Mr}{\boldsymbol{M}}
@@ -82,11 +87,26 @@
 % Stiffness matrix
 \newcommand{\Kr}{\boldsymbol{K}}
 
+% Stiffness matrix
+\newcommand{\Br}{\boldsymbol{B}}
+
 % Coriolis/centrifugal matrix with respect to M(q) 
 \newcommand{\Cr}{\boldsymbol{C}}
 
 % Damping matrix of the joint 
 \newcommand{\Dr}{\boldsymbol{D}}
+
+% Vector of gravity torques
+\newcommand{\gr}{\boldsymbol{g}}
+
+% Jacobian matrix
+\newcommand{\Jr}{\boldsymbol{J}}
+
+\newcommand{\Fr}{\boldsymbol{F}}
+
+\newcommand{\Lambdar}{\boldsymbol{\Lambda}}
+\newcommand{\mur}{\boldsymbol{\mu}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STATE SPACE MATH
@@ -252,8 +272,8 @@
 \newcommand{\Lie}[1]{\ensuremath{L_{#1}}}
 \newcommand{\expo}{\mathrm{e}}							
 
-% the B(r) domain, a ball of size r around the origin.
-\newcommand{\Br}{\mathcal{B}}
+% the Ball(r) domain, a ball of size r around the origin.
+\newcommand{\Ball}{\mathcal{B}}
 
 % the D domain, an open region containing the origin								
 \newcommand{\Dd}{\mathcal{D}}
