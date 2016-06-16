@@ -75,8 +75,14 @@
 % Joint coordinates 
 \newcommand{\qr}{\boldsymbol{q}}		
 
-% Cartesian coordinates 
+% Cartesian coordinates / state vector
 \newcommand{\xr}{\boldsymbol{x}}	
+
+% Cartesian coordinates / input vector
+\newcommand{\ur}{\boldsymbol{u}}
+
+% Cartesian coordinates / output vector
+\newcommand{\yr}{\boldsymbol{y}}	
 
 % Relationship btw joint and cartesian space
 \newcommand{\fr}{\boldsymbol{f}}											
@@ -99,10 +105,15 @@
 % Vector of gravity torques
 \newcommand{\gr}{\boldsymbol{g}}
 
+% output vector
+\newcommand{\hr}{\boldsymbol{h}}
+
 % Jacobian matrix
 \newcommand{\Jr}{\boldsymbol{J}}
 
 \newcommand{\Fr}{\boldsymbol{F}}
+
+\newcommand{\Gr}{\boldsymbol{G}}
 
 \newcommand{\Lambdar}{\boldsymbol{\Lambda}}
 \newcommand{\mur}{\boldsymbol{\mu}}
@@ -224,6 +235,7 @@
 \newcommand{\Iden}[1]{\ensuremath{\mathcal{I}_{#1}}}
 
 % Math symbols - Null matrix (bugs when no argument is given)
+\newcommand{\zero}{\ensuremath{\textbf{0}}}
 \newcommand{\Zero}[1]{\ensuremath{\textbf{0}_{#1}}}
 
 % Math symbols - Set of Real numbers
