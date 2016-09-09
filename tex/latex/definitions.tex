@@ -45,7 +45,9 @@
 
 % RW Kinematics - angle and its derivative
 \newcommand{\Phix}{\pmb{\Phi}}										
-\newcommand{\Phixdot}{\dot{\Phix}}								
+\newcommand{\Phixdot}{\dot{\Phix}}
+\newcommand{\phix}{\boldsymbol{\phi}}										
+\newcommand{\phixdot}{\dot{\phix}}									
 
 % RW_i Kinematics - angle and its derivative
 \newcommand{\phiw}[1]{\ensuremath{\Phi_{#1}}}
@@ -93,6 +95,12 @@
 % Cartesian coordinates / output vector
 \newcommand{\yr}{\boldsymbol{y}}	
 
+% Cartesian coordinates / position vector
+\newcommand{\rr}{\boldsymbol{r}}	
+
+% Cartesian coordinates / velocity vector
+\newcommand{\vr}{\boldsymbol{v}}	
+
 % Relationship btw joint and cartesian space
 \newcommand{\fr}{\boldsymbol{f}}											
 
@@ -126,9 +134,26 @@
 
 \newcommand{\Ar}{\boldsymbol{A}}
 
+\newcommand{\Tr}{\boldsymbol{T}}
+
 \newcommand{\Lambdar}{\boldsymbol{\Lambda}}
 \newcommand{\mur}{\boldsymbol{\mu}}
 
+% Space robot ineria matrix
+\newcommand{\Hr}{\boldsymbol{H}}
+
+% Moments of inertia matrix
+\newcommand{\Ir}{\boldsymbol{I}}
+
+% temp coordinates of robot link positions / check if they can be replaced
+\newcommand{\pr}{\boldsymbol{p}}
+\newcommand{\sr}{\boldsymbol{s}}
+\newcommand{\cmr}{\boldsymbol{c}}	
+
+% linear map [(·)·] 
+\newcommand{\lmap}[1]{\ensuremath{[\,{#1}\,\cdot\,]}}
+% skew map [(·)x] 
+\newcommand{\smap}[1]{\ensuremath{[\,{#1}\times]}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STATE SPACE MATH
@@ -211,7 +236,7 @@
 
 \newcommand{\pp}{\mathit{p}}
 \newcommand{\qq}{\mathit{q}}
-\newcommand{\rr}{\mathit{r}}
+%\newcommand{\rr}{\mathit{r}}
 
 \newcommand{\deltax}{\boldsymbol{\delta}}
 \newcommand{\B}{\mathbf{B}}
