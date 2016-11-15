@@ -59,7 +59,15 @@
 
 % Attitude Dynamics - quaternion vector and quaternion element
 \newcommand{\q}{\mathbf{q}}														
-\newcommand{\qs}{\mathrm{q}}													
+\newcommand{\qs}{\mathrm{q}}	
+
+\newcommand{\Qx}{\mathbf{Q}} % temp
+\newcommand{\qx}{\mathbf{q}} % temp
+
+
+% Attitude Dynamics - MRP vector and MRP element \sigma
+\newcommand{\sigmax}{\boldsymbol{\sigma}}
+
 
 % Mechanical params - inertias
 \newcommand{\Ix}{\mathbf{I}}
@@ -94,6 +102,9 @@
 
 % Cartesian coordinates / output vector
 \newcommand{\yr}{\boldsymbol{y}}	
+
+% Cartesian coordinates / error vector
+\newcommand{\er}{\boldsymbol{e}}
 
 % Cartesian coordinates / position vector
 \newcommand{\rr}{\boldsymbol{r}}	
@@ -138,6 +149,7 @@
 
 \newcommand{\Lambdar}{\boldsymbol{\Lambda}}
 \newcommand{\mur}{\boldsymbol{\mu}}
+\newcommand{\varphir}{\boldsymbol{\varphi}}
 
 % Space robot ineria matrix
 \newcommand{\Hr}{\boldsymbol{H}}
@@ -187,7 +199,7 @@
 \newcommand{\Thetax}{\boldsymbol{\mathbf{\Theta}}}
 
 % Dynamics - continuous time, nonlinear, etc.
-\newcommand{\e}{\mathbf{e}}
+	%\newcommand{\e}{\mathbf{e}} command already defined?
 \newcommand{\f}{\mathbf{f}}
 \newcommand{\F}{\mathbf{F}}
 \newcommand{\g}{\mathbf{g}}
@@ -216,6 +228,12 @@
 % Disturbance - 
 \newcommand{\dx}{\mathbf{d}}
 
+% Gains - 
+\newcommand{\K}{\mathbf{K}}
+\newcommand{\ks}{\mathbf{k}}
+\newcommand{\T}{\mathbf{T}}
+\newcommand{\ts}{\mathbf{t}}
+
 % old stuff
 
 \newcommand{\Fx}{\mathbf{F}}
@@ -223,20 +241,19 @@
 \newcommand{\Tx}{\mathbf{T}}
 
 \newcommand{\px}{\mathbf{p}}
-\newcommand{\Qx}{\mathbf{Q}}
 
 \newcommand{\nux}{\boldsymbol{\nu}}
 
 \newcommand{\N}{\boldsymbol{N}}
-\newcommand{\K}{\mathbf{K}}
+
 
 \newcommand{\xx}{\mathit{x}}
 \newcommand{\yy}{\mathit{y}}
 \newcommand{\zz}{\mathit{z}}
 
-\newcommand{\pp}{\mathit{p}}
-\newcommand{\qq}{\mathit{q}}
-%\newcommand{\rr}{\mathit{r}}
+\newcommand{\ppp}{\mathit{p}}
+\newcommand{\qqq}{\mathit{q}}
+\newcommand{\rrr}{\mathit{r}}
 
 \newcommand{\deltax}{\boldsymbol{\delta}}
 \newcommand{\B}{\mathbf{B}}
@@ -323,7 +340,7 @@
 \newcommand{\me}{\mathrm{e}}
 \newcommand{\mi}{\mathrm{i}}
 
-\newcommand{\half}{\frac{1}{2}}
+	%\newcommand{\half}{\frac{1}{2}} command already defined?
 \newcommand{\quarter}{\frac{1}{4}}
 
 \newcommand{\Lie}[1]{\ensuremath{L_{#1}}}
@@ -338,4 +355,4 @@
 % the skew symmetric matrix (this one or Sx)								
 \newcommand{\Sk}[1]{\ensuremath{\left[{#1}\times\right]}}	
 
-% test zzz	
+
