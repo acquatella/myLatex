@@ -294,14 +294,16 @@
 
 % Math symbols - Identity matrix (bugs when no argument is given)
 \newcommand{\iden}{\ensuremath{\boldsymbol{I}}}
-\newcommand{\Iden}[1]{\ensuremath{\mathcal{I}_{#1}}}
+%\newcommand{\Iden}[1]{\ensuremath{\mathcal{I}_{#1}}} ---OR---
+\newcommand{\Iden}[1]{\ensuremath{\mathscr{I}_{#1}}}
 
 % Math symbols - Null matrix (bugs when no argument is given)
 \newcommand{\zero}{\ensuremath{\boldsymbol{0}}}
 \newcommand{\Zero}[1]{\ensuremath{\textbf{0}_{#1}}}
 
 % Math symbols - Set of Real numbers
-\newcommand{\real}{\mathcal{R}}
+%\newcommand{\real}{\mathcal{R}} ---OR---
+\newcommand{\real}{\mathscr{R}}
 \newcommand{\reals}[1]{\real^{#1}}
 
 % Math symbols - Set of Real circles and spheres
@@ -309,7 +311,8 @@
 \newcommand{\sphere}[1]{\spher^{#1}}
 
 % Math symbols - Set of the special orthogonal group
-\newcommand{\ortho}{\mathcal{SO}(3)}
+%\newcommand{\ortho}{\mathcal{SO}(3)} ---OR---
+\newcommand{\ortho}{\mathscr{SO}(3)}
 
 % Math symbols - Lie algebra of SO(3)
 \newcommand{\ortholie}{\mathfrak{so}(3)}
@@ -355,4 +358,49 @@
 % the skew symmetric matrix (this one or Sx)								
 \newcommand{\Sk}[1]{\ensuremath{\left[{#1}\times\right]}}	
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       MODELICA 2014
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\rv}{\mathbf{r}} 								% the position vector
+\newcommand{\ex}{\mathbf{e}} 								% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       ICATT 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\nx}{\mathbf{n}} 								% unit-vector n
+
+\newcommand{\vv}{\mathbf{v}} 								% vel
+\newcommand{\av}{\mathbf{a}} 								% accel
+
+
+%\newcommand{\Rx}{\mathbf{R}} 								% the ang. rot.
+%\newcommand{\omegax}{\boldsymbol{\omega}} 	% the ang. vel.
+\newcommand{\alphax}{\boldsymbol{\alpha}} 	% the ang. accel.
+
+
+\newcommand{\qv}{\mathbf{q}} 								% generic pos
+\newcommand{\lambdax}{\boldsymbol{\lambda}} % generic forces
+%\newcommand{\Phix}{\boldsymbol{\Phi}} 			% generic
+\newcommand{\varsigmax}{\boldsymbol{\varsigma}} 			% generic 
+
+
+
+%\newcommand{\Ix}{\mathbf{I}} 								% the inertia
+\newcommand{\Idic}{\tilde{\Ix}} 						% the inertia dyadic
+
+%\newcommand{\Fx}{\mathbf{F}} 								% Forces
+%\newcommand{\Tx}{\mathbf{T}} 								% Torques
+%\newcommand{\g}{\mathbf{g}}  								% the constraints g
+
+%\newcommand{\rvcm}{\rv_{CM}} 							  % pos c.m. of sys
+%\newcommand{\vvcm}{\vv_{CM}} 							  % vel c.m. of sys
+%\newcommand{\avcm}{\av_{CM}} 							  % accel c.m. of sys
+
+\newcommand{\rvp}{\rv_{P_{CM}}} 							  % pos c.m. of sys
+
+%\newcommand{\B}{\mathcal{B}} 								% the inertia
+
+\newcommand{\U}{\mathbf{u}}  % the input in R^n
+\newcommand{\rhox}{\boldsymbol{\rho}}								% the RP
 
