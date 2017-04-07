@@ -7,7 +7,7 @@
 \newcommand{\Rxdot}{\dot{\Rx}}	
 
 % S/C Dynamics - angular momentum and its derivative
-\newcommand{\Hx}{\mathbf{H}}													
+\newcommand{\Hx}{\boldsymbol{H}} % OR mathbf
 \newcommand{\Hxdot}{\dot{\Hx}}												
 
 % S/C Dynamics - angular velocity and its derivative
@@ -22,7 +22,7 @@
 \newcommand{\omegaxn}{[\,\omegax\,]_n}
 
 % RW Dynamics - angular momentum and its derivative
-\newcommand{\hx}{\mathbf{h}}	
+\newcommand{\hx}{\boldsymbol{h}}	% OR mathbf
 \newcommand{\hxdot}{\dot{\hx}}												
 
 % RW_i Dynamics - angular momentum and its derivative
@@ -47,7 +47,12 @@
 \newcommand{\Phix}{\pmb{\Phi}}										
 \newcommand{\Phixdot}{\dot{\Phix}}
 \newcommand{\phix}{\boldsymbol{\phi}}										
-\newcommand{\phixdot}{\dot{\phix}}									
+\newcommand{\phixdot}{\dot{\phix}}	
+
+% RW Kinematics - delta angle 
+\newcommand{\Deltax}{\pmb{\Delta}}
+\newcommand{\deltax}{\boldsymbol{\delta}}
+
 
 % RW_i Kinematics - angle and its derivative
 \newcommand{\phiw}[1]{\ensuremath{\Phi_{#1}}}
@@ -70,8 +75,8 @@
 
 
 % Mechanical params - inertias
-\newcommand{\Ix}{\mathbf{I}}
-\newcommand{\Jx}{\mathbf{J}}
+\newcommand{\Ix}{\boldsymbol{I}} % or mathbf
+\newcommand{\Jx}{\boldsymbol{J}} % or mathbf
 \newcommand{\Iw}[1]{\ensuremath{\Ix_{#1}}}
 \newcommand{\Iwt}[1]{\ensuremath{\tilde{\Ix}_{#1}}}
 \newcommand{\Iwh}[1]{\ensuremath{\hat{\Ix}_{#1}}}
@@ -110,7 +115,7 @@
 \newcommand{\rr}{\boldsymbol{r}}	
 
 % Cartesian coordinates / velocity vector
-\newcommand{\vr}{\boldsymbol{v}}	
+	%\newcommand{\vr}{\boldsymbol{v}}	 COMMENTED OUT TEMPORARILY FOR AIAA CLASS
 
 % Relationship btw joint and cartesian space
 \newcommand{\fr}{\boldsymbol{f}}											
@@ -255,7 +260,6 @@
 \newcommand{\qqq}{\mathit{q}}
 \newcommand{\rrr}{\mathit{r}}
 
-\newcommand{\deltax}{\boldsymbol{\delta}}
 \newcommand{\B}{\mathbf{B}}
 \newcommand{\Ds}{\mathbf{D}}
 
@@ -294,16 +298,16 @@
 
 % Math symbols - Identity matrix (bugs when no argument is given)
 \newcommand{\iden}{\ensuremath{\boldsymbol{I}}}
-%\newcommand{\Iden}[1]{\ensuremath{\mathcal{I}_{#1}}} ---OR---
-\newcommand{\Iden}[1]{\ensuremath{\mathscr{I}_{#1}}}
+\newcommand{\Iden}[1]{\ensuremath{\mathcal{I}_{#1}}} %---OR---
+%\newcommand{\Iden}[1]{\ensuremath{\mathscr{I}_{#1}}}
 
 % Math symbols - Null matrix (bugs when no argument is given)
 \newcommand{\zero}{\ensuremath{\boldsymbol{0}}}
 \newcommand{\Zero}[1]{\ensuremath{\textbf{0}_{#1}}}
 
 % Math symbols - Set of Real numbers
-%\newcommand{\real}{\mathcal{R}} ---OR---
-\newcommand{\real}{\mathscr{R}}
+\newcommand{\real}{\mathcal{R}} %---OR---
+%\newcommand{\real}{\mathscr{R}}
 \newcommand{\reals}[1]{\real^{#1}}
 
 % Math symbols - Set of Real circles and spheres
@@ -311,8 +315,8 @@
 \newcommand{\sphere}[1]{\spher^{#1}}
 
 % Math symbols - Set of the special orthogonal group
-%\newcommand{\ortho}{\mathcal{SO}(3)} ---OR---
-\newcommand{\ortho}{\mathscr{SO}(3)}
+\newcommand{\ortho}{\mathcal{SO}(3)} %---OR---
+%\newcommand{\ortho}{\mathscr{SO}(3)}
 
 % Math symbols - Lie algebra of SO(3)
 \newcommand{\ortholie}{\mathfrak{so}(3)}
@@ -332,7 +336,7 @@
 \newcommand{\vect}[1]{\ensuremath{\boldsymbol{#1}}}
 \newcommand{\tth}{\ensuremath{^{\text{th}}}}
 \newcommand{\nth}{^{(n)}}
-\newcommand{\ie}{\textsl{i.e.}}
+%\newcommand{\ie}{\textsl{i.e.}}
 \newcommand{\ies}{\text{i.e.~}}
 \newcommand{\Idenold}{\mathrm{I}_{3\times3}}
 \newcommand{\IDEN}{\mathrm{I}_{6\times6}}
